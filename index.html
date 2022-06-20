@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c637eae12e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href = "style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "box">
+            <div class = "logo">
+                <img src = "img/logo.gif" style = "height : 100%; width : 100%;" >
+            </div>
+            <div class = "search">
+                <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                <input type = "text" class = "inp" >
+                <img src = "img/mic.webp" class = "mic">   
+            </div>
+            <div>
+                <button class = 'btn' onclick = "search()">
+                    Google Search
+
+                </button>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</body>
+<script>
+    let query = document.querySelector('.inp');
+    let button = document.querySelector('.btn');
+    function search(){
+        let url = "https://www.google.com/search?q="+query.value;
+        window.open(url,'_self');
+    }
+    query.addEventListener('keyup',function(event){
+        if(event.key=="Enter"){
+            search();
+        }
+    })
+    
+
+</script>
+</html> 
