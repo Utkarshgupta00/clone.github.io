@@ -8,34 +8,32 @@
     display : flex;
     justify-content: center;
     align-items: center;
+
 }
 .box{
     height : 500px;
     width : 800px;
-    
 }
 .logo{
     width : 70%;
     height : 150px;
-    margin : 50px 15%;
+    margin : 30px 15%;
 }
 .search{
-    width : 100%;
+    width : 90%;
+    margin : 0 5%;
     height : 30px;
     border-radius: 20px;
     outline : none;
     border : 1px solid rgba(0,0,0,0.5);
     display : flex;
     justify-content: space-between;
-    margin : 0px 10px;
-    padding : 0px 10px;
 }
 .inp{
     width : 94%;
     margin : 0 3%;
     border : none;
     outline : none;
-
 }
 i{
     
@@ -49,13 +47,24 @@ i{
     padding : 5px;
     
 }
+.butt{
+height : 100px;
+display : flex;
+justify-content : center;
+align-items : center;
+}
 .btn{
     width : 30%;
-    height : auto;
-    margin : 40px 35%;
     font-size: 16px;
     padding : 20px;
     border : none;
     cursor : pointer;
-    background : rgba(189, 180, 180, 0.5)
+    background : transparent;
+    border : 0.5px solid grey;
+    background : rgba(0,0,0,0.1);
+}
+@media (max-width : 700px){
+.btn{
+width : 50%;
+}
 }
